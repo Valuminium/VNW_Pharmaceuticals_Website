@@ -4,20 +4,20 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>VNW Pharma — Skin & Hair Science</title>
-  <link href="https://fonts.googleapis.com/css2?family=Clash+Display:wght@400;500;600;700&family=Syne:wght@400;500;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700;1,800&family=Syne:wght@400;500;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
   <style>
     :root {
-      --bg: #0a0a0f;
-      --bg2: #0f0f1a;
-      --surface: #13131f;
-      --surface2: #1a1a2e;
-      --border: rgba(255,255,255,0.07);
-      --accent: #b8ff57;
-      --accent2: #57d9ff;
-      --accent3: #ff57b8;
-      --text: #f0f0f8;
-      --muted: #8888aa;
-      --pill-bg: rgba(184,255,87,0.08);
+      --bg: #f0fbff;
+      --bg2: #e6f7fc;
+      --surface: #ffffff;
+      --surface2: #e8f6f8;
+      --border: rgba(0, 140, 180, 0.13);
+      --accent: #0097b2;
+      --accent2: #00c5a5;
+      --accent3: #0062a3;
+      --text: #0d2d3a;
+      --muted: #4a7d8e;
+      --pill-bg: rgba(0, 151, 178, 0.08);
     }
 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -25,7 +25,8 @@
     html { scroll-behavior: smooth; }
 
     body {
-      background: var(--bg);
+      background: linear-gradient(135deg, #f0fbff 0%, #e0f5f9 30%, #d9f5ef 60%, #f5fdff 100%);
+      background-attachment: fixed;
       color: var(--text);
       font-family: 'DM Sans', sans-serif;
       font-size: 16px;
@@ -41,7 +42,7 @@
       background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
       pointer-events: none;
       z-index: 9999;
-      opacity: 0.4;
+      opacity: 0.15;
     }
 
     /* ---- NAV ---- */
@@ -53,10 +54,10 @@
       align-items: center;
       justify-content: space-between;
       padding: 20px 48px;
-      background: rgba(10,10,15,0.75);
+      background: rgba(240, 251, 255, 0.85);
       backdrop-filter: blur(24px);
       -webkit-backdrop-filter: blur(24px);
-      border-bottom: 1px solid var(--border);
+      border-bottom: 1px solid rgba(0, 140, 180, 0.15);
       transition: padding 0.3s;
     }
 
@@ -70,7 +71,7 @@
     .nav-logo img {
       height: 36px;
       width: auto;
-      filter: brightness(0) invert(1);
+      filter: none;
     }
 
     .nav-logo span {
@@ -101,7 +102,7 @@
 
     .nav-cta {
       background: var(--accent);
-      color: #0a0a0f !important;
+      color: #ffffff !important;
       padding: 10px 22px;
       border-radius: 100px;
       font-weight: 600 !important;
@@ -111,8 +112,8 @@
 
     .nav-cta:hover {
       transform: translateY(-2px);
-      box-shadow: 0 8px 24px rgba(184,255,87,0.3) !important;
-      color: #0a0a0f !important;
+      box-shadow: 0 8px 24px rgba(0,151,178,0.3) !important;
+      color: #ffffff !important;
     }
 
     /* ---- HERO ---- */
@@ -132,7 +133,7 @@
       width: 700px;
       height: 700px;
       border-radius: 50%;
-      background: radial-gradient(ellipse, rgba(184,255,87,0.12) 0%, transparent 70%);
+      background: radial-gradient(ellipse, rgba(0,151,178,0.12) 0%, transparent 70%);
       top: -200px;
       right: -100px;
       pointer-events: none;
@@ -143,7 +144,7 @@
       width: 500px;
       height: 500px;
       border-radius: 50%;
-      background: radial-gradient(ellipse, rgba(87,217,255,0.08) 0%, transparent 70%);
+      background: radial-gradient(ellipse, rgba(0,197,165,0.10) 0%, transparent 70%);
       bottom: -100px;
       left: -100px;
       pointer-events: none;
@@ -185,17 +186,17 @@
     }
 
     .hero-title {
-      font-family: 'Syne', sans-serif;
+      font-family: 'Playfair Display', Georgia, serif;
       font-weight: 800;
       font-size: clamp(3rem, 5.5vw, 5.5rem);
-      line-height: 1.0;
-      letter-spacing: -0.04em;
+      line-height: 1.05;
+      letter-spacing: -0.02em;
       margin-bottom: 24px;
       animation: fadeUp 0.6s 0.1s ease both;
     }
 
     .hero-title .line-accent { color: var(--accent); }
-    .hero-title .line-dim { color: var(--muted); }
+    .hero-title .line-dim { color: var(--accent2); font-style: italic; }
 
     .hero-desc {
       color: var(--muted);
@@ -215,7 +216,7 @@
 
     .btn-primary {
       background: var(--accent);
-      color: #0a0a0f;
+      color: #ffffff;
       padding: 14px 32px;
       border-radius: 100px;
       font-weight: 700;
@@ -231,25 +232,25 @@
 
     .btn-primary:hover {
       transform: translateY(-3px);
-      box-shadow: 0 12px 32px rgba(184,255,87,0.35);
+      box-shadow: 0 12px 32px rgba(0,151,178,0.35);
     }
 
     .btn-ghost {
       background: transparent;
-      color: var(--text);
+      color: var(--accent);
       padding: 14px 28px;
       border-radius: 100px;
       font-weight: 500;
       font-size: 0.95rem;
       text-decoration: none;
-      border: 1px solid var(--border);
+      border: 1px solid rgba(0,151,178,0.3);
       cursor: pointer;
       transition: border-color 0.2s, background 0.2s;
     }
 
     .btn-ghost:hover {
-      border-color: rgba(255,255,255,0.2);
-      background: rgba(255,255,255,0.04);
+      border-color: rgba(0,151,178,0.5);
+      background: rgba(0,151,178,0.06);
     }
 
     .hero-stats {
@@ -293,14 +294,15 @@
 
     .showcase-card {
       position: absolute;
-      background: var(--surface);
-      border: 1px solid var(--border);
+      background: rgba(255,255,255,0.85);
+      border: 1px solid rgba(0,151,178,0.15);
       border-radius: 24px;
       padding: 24px;
       display: flex;
       flex-direction: column;
       align-items: center;
       backdrop-filter: blur(20px);
+      box-shadow: 0 8px 32px rgba(0,120,160,0.10);
       transition: transform 0.4s ease;
     }
 
@@ -311,8 +313,8 @@
       top: 50%; left: 50%;
       transform: translate(-50%, -50%);
       z-index: 3;
-      border-color: rgba(184,255,87,0.15);
-      box-shadow: 0 0 60px rgba(184,255,87,0.06);
+      border-color: rgba(0,151,178,0.25);
+      box-shadow: 0 0 60px rgba(0,151,178,0.10);
     }
 
     .showcase-card.card-main:hover {
@@ -367,8 +369,8 @@
 
     .badge-float {
       position: absolute;
-      background: var(--surface2);
-      border: 1px solid var(--border);
+      background: rgba(255,255,255,0.92);
+      border: 1px solid rgba(0,151,178,0.18);
       border-radius: 100px;
       padding: 8px 16px;
       font-size: 0.75rem;
@@ -380,6 +382,7 @@
       white-space: nowrap;
       animation: floatBadge 3s ease infinite;
       backdrop-filter: blur(10px);
+      box-shadow: 0 4px 16px rgba(0,120,160,0.10);
     }
 
     .badge-float.b1 { top: 0; right: 20px; animation-delay: 0s; }
@@ -392,10 +395,10 @@
 
     /* ---- MARQUEE ---- */
     .marquee-section {
-      border-top: 1px solid var(--border);
-      border-bottom: 1px solid var(--border);
+      border-top: 1px solid rgba(0,151,178,0.15);
+      border-bottom: 1px solid rgba(0,151,178,0.15);
       padding: 16px 0;
-      background: var(--surface);
+      background: rgba(255,255,255,0.7);
       overflow: hidden;
     }
 
@@ -494,9 +497,9 @@
     }
 
     .product-card:hover {
-      border-color: rgba(184,255,87,0.2);
+      border-color: rgba(0,151,178,0.3);
       transform: translateY(-6px);
-      box-shadow: 0 24px 48px rgba(0,0,0,0.4), 0 0 40px rgba(184,255,87,0.05);
+      box-shadow: 0 24px 48px rgba(0,100,140,0.12), 0 0 40px rgba(0,151,178,0.07);
     }
 
     .product-card.featured {
@@ -522,7 +525,7 @@
       content: '';
       position: absolute;
       inset: 0;
-      background: radial-gradient(ellipse at 50% 80%, rgba(184,255,87,0.06) 0%, transparent 70%);
+      background: radial-gradient(ellipse at 50% 80%, rgba(0,151,178,0.07) 0%, transparent 70%);
       pointer-events: none;
     }
 
@@ -534,7 +537,7 @@
       position: relative;
       z-index: 1;
       transition: transform 0.4s ease;
-      filter: drop-shadow(0 12px 32px rgba(0,0,0,0.5));
+      filter: drop-shadow(0 12px 32px rgba(0,100,140,0.15));
     }
 
     .product-card.featured .product-img-wrap img { max-height: 260px; }
@@ -547,15 +550,15 @@
       position: absolute;
       top: 16px;
       left: 16px;
-      background: rgba(10,10,15,0.7);
-      border: 1px solid var(--border);
+      background: rgba(255,255,255,0.88);
+      border: 1px solid rgba(0,151,178,0.18);
       padding: 5px 12px;
       border-radius: 100px;
       font-size: 0.7rem;
       font-weight: 600;
       text-transform: uppercase;
       letter-spacing: 0.1em;
-      color: var(--muted);
+      color: var(--accent);
       backdrop-filter: blur(8px);
     }
 
@@ -564,7 +567,7 @@
       top: 16px;
       right: 16px;
       background: var(--accent);
-      color: #0a0a0f;
+      color: #ffffff;
       padding: 5px 12px;
       border-radius: 100px;
       font-size: 0.7rem;
@@ -624,12 +627,12 @@
       align-items: center;
       justify-content: center;
       transition: transform 0.2s, box-shadow 0.2s;
-      color: #0a0a0f;
+      color: #ffffff;
     }
 
     .product-action:hover {
       transform: scale(1.15);
-      box-shadow: 0 6px 20px rgba(184,255,87,0.4);
+      box-shadow: 0 6px 20px rgba(0,151,178,0.4);
     }
 
     .product-tags {
@@ -640,12 +643,12 @@
     }
 
     .ptag {
-      background: rgba(255,255,255,0.05);
-      border: 1px solid var(--border);
+      background: rgba(0,151,178,0.07);
+      border: 1px solid rgba(0,151,178,0.15);
       padding: 4px 10px;
       border-radius: 100px;
       font-size: 0.72rem;
-      color: var(--muted);
+      color: var(--accent);
       font-weight: 500;
     }
 
@@ -664,18 +667,18 @@
     }
 
     .feature-item {
-      background: var(--surface);
+      background: rgba(255,255,255,0.8);
       padding: 48px 40px;
       position: relative;
       transition: background 0.3s;
     }
 
-    .feature-item:hover { background: var(--surface2); }
+    .feature-item:hover { background: rgba(255,255,255,0.95); }
 
     .feature-icon {
       width: 52px; height: 52px;
-      background: var(--pill-bg);
-      border: 1px solid rgba(184,255,87,0.15);
+      background: rgba(0,151,178,0.08);
+      border: 1px solid rgba(0,151,178,0.18);
       border-radius: 16px;
       display: flex;
       align-items: center;
