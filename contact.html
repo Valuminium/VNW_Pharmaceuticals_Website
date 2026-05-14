@@ -1,33 +1,53 @@
-<!-- =========================================================
-     CONTACT.HTML
-     ========================================================= -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
   <title>Contact Us</title>
 
-  <!-- Google Fonts -->
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@700;800&family=Syne:wght@500;700;800&display=swap" rel="stylesheet">
 
-  <!-- CONTACT CSS -->
+  <!-- CSS -->
   <link rel="stylesheet" href="contact.css">
+
 </head>
 
 <body>
 
-  <!-- =========================================================
-       HERO SECTION
-       ========================================================= -->
+  <!-- ===================================================== -->
+  <!-- HEADER -->
+  <!-- ===================================================== -->
+
+  <header class="header">
+
+    <div class="logo">
+      SKINJAL
+    </div>
+
+    <nav class="nav">
+
+      <a href="#">Home</a>
+      <a href="#">Products</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+
+    </nav>
+
+  </header>
+
+  <!-- ===================================================== -->
+  <!-- HERO -->
+  <!-- ===================================================== -->
+
   <section class="contact-hero">
 
     <div class="contact-hero-glow"></div>
-    <div class="contact-hero-glow2"></div>
 
     <div class="contact-hero-inner">
 
@@ -41,63 +61,78 @@
       </h1>
 
       <p class="contact-hero-desc">
-        Have questions regarding products, partnerships,
-        wholesale or skincare guidance? Reach out to us.
+        Reach out for product inquiries,
+        wholesale partnerships or skincare guidance.
       </p>
 
     </div>
+
   </section>
 
-  <!-- =========================================================
-       MAIN CONTACT SECTION
-       ========================================================= -->
+  <!-- ===================================================== -->
+  <!-- CONTACT MAIN -->
+  <!-- ===================================================== -->
+
   <section class="contact-main">
 
     <!-- LEFT -->
+
     <div class="contact-info">
 
       <div class="info-card">
+
         <div class="info-card-icon">📞</div>
 
         <div>
           <div class="info-card-title">Phone</div>
+
           <div class="info-card-value">
-            +91 98765 43210
+            +91 9876543210
           </div>
         </div>
+
       </div>
 
       <div class="info-card">
+
         <div class="info-card-icon">✉️</div>
 
         <div>
           <div class="info-card-title">Email</div>
+
           <div class="info-card-value">
-            hello@yourbrand.com
+            hello@skinjal.com
           </div>
         </div>
+
       </div>
 
       <div class="info-card">
+
         <div class="info-card-icon">📍</div>
 
         <div>
           <div class="info-card-title">Location</div>
+
           <div class="info-card-value">
             Pune, Maharashtra
           </div>
         </div>
+
       </div>
 
     </div>
 
     <!-- RIGHT -->
+
     <div class="contact-form-wrap">
 
       <div class="form-header">
+
         <h2 class="form-title">
-          Send Us A Message
+          Send A Message
         </h2>
+
       </div>
 
       <form class="contact-form">
@@ -105,42 +140,29 @@
         <div class="form-row">
 
           <div class="form-group">
-            <label>Full Name</label>
+
+            <label>Name</label>
+
             <input type="text" placeholder="Enter your name">
+
           </div>
 
           <div class="form-group">
+
             <label>Email</label>
+
             <input type="email" placeholder="Enter your email">
-          </div>
 
-        </div>
-
-        <div class="form-row">
-
-          <div class="form-group">
-            <label>Phone</label>
-            <input type="tel" placeholder="Enter phone number">
-          </div>
-
-          <div class="form-group">
-            <label>Subject</label>
-
-            <select>
-              <option>Select Subject</option>
-              <option>Product Inquiry</option>
-              <option>Wholesale</option>
-              <option>Partnership</option>
-              <option>Support</option>
-            </select>
           </div>
 
         </div>
 
         <div class="form-group">
+
           <label>Message</label>
 
           <textarea placeholder="Write your message..."></textarea>
+
         </div>
 
         <button class="btn-submit">
@@ -153,52 +175,101 @@
 
   </section>
 
-  <!-- =========================================================
-       LOCATION SECTION
-       ========================================================= -->
-  <section class="location-strip">
+  <!-- ===================================================== -->
+  <!-- FAQ -->
+  <!-- ===================================================== -->
 
-    <div class="location-inner">
+  <section class="faq-section">
 
-      <div>
+    <div class="faq-inner">
+
+      <div class="faq-header">
+
         <h2 class="form-title">
-          Visit Our Office
+          Frequently Asked Questions
         </h2>
 
-        <p class="location-desc">
-          Connect with our team directly for product
-          discussions, collaborations and business inquiries.
-        </p>
+      </div>
 
-        <div class="location-details">
+      <div class="faq-list">
 
-          <div class="location-row">
-            📍 Pune, Maharashtra
-          </div>
+        <div class="faq-item">
 
-          <div class="location-row">
-            📞 +91 98765 43210
-          </div>
+          <button class="faq-q">
+            How long does delivery take?
+          </button>
 
-          <div class="location-row">
-            ✉️ hello@yourbrand.com
+          <div class="faq-a">
+            Delivery usually takes 3-5 business days.
           </div>
 
         </div>
-      </div>
 
-      <div class="map-embed">
+        <div class="faq-item">
 
-        <iframe
-          src="https://maps.google.com/maps?q=pune&t=&z=13&ie=UTF8&iwloc=&output=embed"
-          loading="lazy">
-        </iframe>
+          <button class="faq-q">
+            Do you offer wholesale?
+          </button>
+
+          <div class="faq-a">
+            Yes, we provide wholesale partnerships.
+          </div>
+
+        </div>
 
       </div>
 
     </div>
 
   </section>
+
+  <!-- ===================================================== -->
+  <!-- FOOTER -->
+  <!-- ===================================================== -->
+
+  <footer>
+
+    <div class="footer-grid">
+
+      <div>
+
+        <div class="footer-logo">
+          SKINJAL
+        </div>
+
+        <p class="footer-text">
+          Premium skincare solutions crafted for modern skin wellness.
+        </p>
+
+      </div>
+
+      <div>
+
+        <h4>Quick Links</h4>
+
+        <ul>
+
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">About</a></li>
+
+        </ul>
+
+      </div>
+
+      <div>
+
+        <h4>Contact</h4>
+
+        <p>hello@skinjal.com</p>
+
+        <p>+91 9876543210</p>
+
+      </div>
+
+    </div>
+
+  </footer>
 
 </body>
 </html>
