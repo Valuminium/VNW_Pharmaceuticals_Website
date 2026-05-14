@@ -1,367 +1,275 @@
-/* =========================================================
-   CONTACT.CSS
-   ========================================================= */
+<!DOCTYPE html>
+<html lang="en">
 
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-}
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-body{
-  font-family:'DM Sans',sans-serif;
-  background:#f7fafb;
-  color:#111;
-  overflow-x:hidden;
-}
+  <title>Contact Us</title>
 
-/* =========================================================
-   VARIABLES
-   ========================================================= */
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-:root{
-  --accent:#0097b2;
-  --accent2:#00c5a5;
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@700;800&family=Syne:wght@500;700;800&display=swap" rel="stylesheet">
 
-  --text:#111827;
-  --muted:#6b7280;
+  <!-- CSS -->
+  <link rel="stylesheet" href="contact.css">
 
-  --surface:#ffffff;
-  --border:#e5e7eb;
+</head>
 
-  --bg:#f9fafb;
-  --pill-bg:#f1f8fa;
-}
+<body>
 
-/* =========================================================
-   HERO
-   ========================================================= */
+  <!-- ===================================================== -->
+  <!-- HEADER -->
+  <!-- ===================================================== -->
 
-.contact-hero{
-  min-height:55vh;
-  display:flex;
-  align-items:center;
-  padding:140px 60px 80px;
-  position:relative;
-  overflow:hidden;
-}
+  <header class="header">
 
-.contact-hero-glow{
-  position:absolute;
-  width:700px;
-  height:700px;
-  border-radius:50%;
-  background:radial-gradient(circle,
-  rgba(0,151,178,0.15) 0%,
-  transparent 70%);
-  top:-220px;
-  right:-120px;
-}
+    <div class="logo">
+      SKINJAL
+    </div>
 
-.contact-hero-glow2{
-  position:absolute;
-  width:500px;
-  height:500px;
-  border-radius:50%;
-  background:radial-gradient(circle,
-  rgba(0,197,165,0.12) 0%,
-  transparent 70%);
-  bottom:-180px;
-  left:-120px;
-}
+    <nav class="nav">
 
-.contact-hero-inner{
-  position:relative;
-  z-index:2;
-  max-width:700px;
-}
+      <a href="#">Home</a>
+      <a href="#">Products</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
 
-.hero-tag{
-  display:inline-flex;
-  align-items:center;
-  gap:10px;
-  background:var(--pill-bg);
-  border:1px solid rgba(0,151,178,0.25);
-  padding:8px 18px;
-  border-radius:100px;
-  color:var(--accent);
-  font-size:.8rem;
-  font-weight:700;
-  text-transform:uppercase;
-  margin-bottom:24px;
-}
+    </nav>
 
-.contact-hero-title{
-  font-family:'Playfair Display',serif;
-  font-size:clamp(3rem,6vw,5rem);
-  line-height:1;
-  margin-bottom:22px;
-}
+  </header>
 
-.line-accent{
-  color:var(--accent);
-}
+  <!-- ===================================================== -->
+  <!-- HERO -->
+  <!-- ===================================================== -->
 
-.contact-hero-desc{
-  color:var(--muted);
-  font-size:1.05rem;
-  line-height:1.8;
-  max-width:520px;
-}
+  <section class="contact-hero">
 
-/* =========================================================
-   CONTACT MAIN
-   ========================================================= */
+    <div class="contact-hero-glow"></div>
 
-.contact-main{
-  display:grid;
-  grid-template-columns:1fr 1.5fr;
-  gap:40px;
-  padding:80px 60px;
-  align-items:start;
-}
+    <div class="contact-hero-inner">
 
-/* LEFT SIDE */
+      <div class="hero-tag">
+        Contact Us
+      </div>
 
-.contact-info{
-  display:flex;
-  flex-direction:column;
-  gap:20px;
-  position:sticky;
-  top:100px;
-}
+      <h1 class="contact-hero-title">
+        Let’s Build Something
+        <span class="line-accent">Amazing</span>
+      </h1>
 
-.info-card{
-  background:var(--surface);
-  border:1px solid var(--border);
-  border-radius:24px;
-  padding:24px;
-  display:flex;
-  gap:18px;
-  transition:.3s;
-}
+      <p class="contact-hero-desc">
+        Reach out for product inquiries,
+        wholesale partnerships or skincare guidance.
+      </p>
 
-.info-card:hover{
-  transform:translateY(-4px);
-  box-shadow:0 12px 30px rgba(0,0,0,.06);
-}
+    </div>
 
-.info-card-icon{
-  width:52px;
-  height:52px;
-  border-radius:16px;
-  background:var(--pill-bg);
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-size:1.3rem;
-  flex-shrink:0;
-}
+  </section>
 
-.info-card-title{
-  font-size:.8rem;
-  color:var(--muted);
-  text-transform:uppercase;
-  margin-bottom:6px;
-  font-weight:700;
-}
+  <!-- ===================================================== -->
+  <!-- CONTACT MAIN -->
+  <!-- ===================================================== -->
 
-.info-card-value{
-  font-size:1rem;
-  font-weight:600;
-}
+  <section class="contact-main">
 
-/* =========================================================
-   FORM
-   ========================================================= */
+    <!-- LEFT -->
 
-.contact-form-wrap{
-  background:var(--surface);
-  border:1px solid var(--border);
-  border-radius:32px;
-  padding:50px;
-  box-shadow:0 15px 50px rgba(0,0,0,.05);
-}
+    <div class="contact-info">
 
-.form-header{
-  margin-bottom:40px;
-}
+      <div class="info-card">
 
-.form-title{
-  font-family:'Syne',sans-serif;
-  font-size:clamp(2rem,4vw,3rem);
-  font-weight:800;
-}
+        <div class="info-card-icon">📞</div>
 
-.contact-form{
-  display:flex;
-  flex-direction:column;
-  gap:24px;
-}
+        <div>
+          <div class="info-card-title">Phone</div>
 
-.form-row{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:20px;
-}
+          <div class="info-card-value">
+            +91 9876543210
+          </div>
+        </div>
 
-.form-group{
-  display:flex;
-  flex-direction:column;
-  gap:8px;
-}
+      </div>
 
-label{
-  font-size:.9rem;
-  font-weight:600;
-}
+      <div class="info-card">
 
-input,
-textarea,
-select{
-  width:100%;
-  padding:15px 16px;
-  border-radius:14px;
-  border:1px solid var(--border);
-  background:var(--bg);
-  outline:none;
-  font-size:.95rem;
-  transition:.3s;
-}
+        <div class="info-card-icon">✉️</div>
 
-input:focus,
-textarea:focus,
-select:focus{
-  border-color:var(--accent);
-  box-shadow:0 0 0 4px rgba(0,151,178,.12);
-}
+        <div>
+          <div class="info-card-title">Email</div>
 
-textarea{
-  min-height:140px;
-  resize:vertical;
-}
+          <div class="info-card-value">
+            hello@skinjal.com
+          </div>
+        </div>
 
-.btn-submit{
-  width:100%;
-  border:none;
-  padding:16px;
-  border-radius:100px;
-  background:var(--accent);
-  color:#fff;
-  font-size:1rem;
-  font-weight:700;
-  cursor:pointer;
-  transition:.3s;
-}
+      </div>
 
-.btn-submit:hover{
-  transform:translateY(-3px);
-  box-shadow:0 15px 35px rgba(0,151,178,.35);
-}
+      <div class="info-card">
 
-/* =========================================================
-   LOCATION
-   ========================================================= */
+        <div class="info-card-icon">📍</div>
 
-.location-strip{
-  padding:0 60px 100px;
-}
+        <div>
+          <div class="info-card-title">Location</div>
 
-.location-inner{
-  background:var(--surface);
-  border:1px solid var(--border);
-  border-radius:32px;
-  padding:60px;
-  display:grid;
-  grid-template-columns:1fr 1.2fr;
-  gap:50px;
-}
+          <div class="info-card-value">
+            Pune, Maharashtra
+          </div>
+        </div>
 
-.location-desc{
-  margin:20px 0;
-  color:var(--muted);
-  line-height:1.8;
-}
+      </div>
 
-.location-details{
-  display:flex;
-  flex-direction:column;
-  gap:14px;
-}
+    </div>
 
-.location-row{
-  font-weight:500;
-}
+    <!-- RIGHT -->
 
-.map-embed{
-  border-radius:24px;
-  overflow:hidden;
-  min-height:350px;
-}
+    <div class="contact-form-wrap">
 
-.map-embed iframe{
-  width:100%;
-  height:100%;
-  border:none;
-}
+      <div class="form-header">
 
-/* =========================================================
-   RESPONSIVE
-   ========================================================= */
+        <h2 class="form-title">
+          Send A Message
+        </h2>
 
-@media(max-width:1024px){
+      </div>
 
-  .contact-main{
-    grid-template-columns:1fr;
-  }
+      <form class="contact-form">
 
-  .contact-info{
-    position:static;
-  }
+        <div class="form-row">
 
-  .location-inner{
-    grid-template-columns:1fr;
-  }
-}
+          <div class="form-group">
 
-@media(max-width:768px){
+            <label>Name</label>
 
-  .contact-hero{
-    padding:120px 24px 60px;
-  }
+            <input type="text" placeholder="Enter your name">
 
-  .contact-main{
-    padding:60px 24px;
-  }
+          </div>
 
-  .location-strip{
-    padding:0 24px 80px;
-  }
+          <div class="form-group">
 
-  .contact-form-wrap{
-    padding:32px 24px;
-  }
+            <label>Email</label>
 
-  .form-row{
-    grid-template-columns:1fr;
-  }
+            <input type="email" placeholder="Enter your email">
 
-  .location-inner{
-    padding:32px 24px;
-  }
-}
+          </div>
 
-@media(max-width:480px){
+        </div>
 
-  .contact-hero-title{
-    font-size:2.5rem;
-  }
+        <div class="form-group">
 
-  .hero-tag{
-    font-size:.7rem;
-  }
+          <label>Message</label>
 
-  .contact-hero-desc{
-    font-size:.95rem;
-  }
-}
+          <textarea placeholder="Write your message..."></textarea>
+
+        </div>
+
+        <button class="btn-submit">
+          Send Message
+        </button>
+
+      </form>
+
+    </div>
+
+  </section>
+
+  <!-- ===================================================== -->
+  <!-- FAQ -->
+  <!-- ===================================================== -->
+
+  <section class="faq-section">
+
+    <div class="faq-inner">
+
+      <div class="faq-header">
+
+        <h2 class="form-title">
+          Frequently Asked Questions
+        </h2>
+
+      </div>
+
+      <div class="faq-list">
+
+        <div class="faq-item">
+
+          <button class="faq-q">
+            How long does delivery take?
+          </button>
+
+          <div class="faq-a">
+            Delivery usually takes 3-5 business days.
+          </div>
+
+        </div>
+
+        <div class="faq-item">
+
+          <button class="faq-q">
+            Do you offer wholesale?
+          </button>
+
+          <div class="faq-a">
+            Yes, we provide wholesale partnerships.
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ===================================================== -->
+  <!-- FOOTER -->
+  <!-- ===================================================== -->
+
+  <footer>
+
+    <div class="footer-grid">
+
+      <div>
+
+        <div class="footer-logo">
+          SKINJAL
+        </div>
+
+        <p class="footer-text">
+          Premium skincare solutions crafted for modern skin wellness.
+        </p>
+
+      </div>
+
+      <div>
+
+        <h4>Quick Links</h4>
+
+        <ul>
+
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">About</a></li>
+
+        </ul>
+
+      </div>
+
+      <div>
+
+        <h4>Contact</h4>
+
+        <p>hello@skinjal.com</p>
+
+        <p>+91 9876543210</p>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+</body>
+</html>
